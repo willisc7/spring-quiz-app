@@ -2,6 +2,9 @@
 
 Taken from this qwiklab https://google.qwiklabs.com/catalog_lab/968
 
+### Setup
+0. Create new project
+
 ### Show app doesnt persist data in DB
 0. `cd start && mvn spring-boot:run`
 0. Launch web preview on 8080 and create a question
@@ -13,3 +16,6 @@ Taken from this qwiklab https://google.qwiklabs.com/catalog_lab/968
 0. `mvn spring-boot:run`
 0. Create a question
 0. In the GCP Console, click **Navigation menu > Datastore > Entities** and notice the data is persisted
+
+### Teardown
+0. `gcloud projects delete $GCLOUD_PROJECT`
